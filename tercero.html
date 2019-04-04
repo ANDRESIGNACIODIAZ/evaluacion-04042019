@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        *{ margin:0; padding:0;}
+        body {height:100%; width:100%; overflow:hidden;}
+        #menu { top: 1rem; right: 1rem; position: fixed; z-index:9999; }
+    </style>
+    <title>Ejercicios de p5.js</title>
+</head>
+<body>
+    <!-- este será el munú -->
+    <select id="menu" onchange="location=this.value;">
+        <option value="index.html">index.html</option>
+        <option value="sketch-1.html" selected>sketch-1.html</option>
+        <option value="sketch-2.html">sketch-2.html</option>
+        <option value="sketch-3.html">sketch-3.html</option>
+        <option value="sketch-4.html">sketch-4.html</option>
+        <option value="sketch-5.html">sketch-5.html</option>
+        <option value="sketch-6.html">sketch-6.html</option>
+    </select>
+    <!-- este div recibirá al canvas-->
+    <div id="aqui"></div>
+    <!-- vamos a buscar la biblioteca -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+    <script>
+        
+function setup() {
+  createCanvas(700, 500);
+  noStroke();
+  background(51, 0, 0);
+
+  let inside = color(255, 035, 001);
+  let middle = color(87, 35, 100);
+
+  push();
+  translate(20, 80); //la primera coordenada mueve el conjunto a la derecha y la segunda coordenada mueve el conjunto a la izquierda
+  fill(middle);
+  square(-20, -80, 100, 200); 
+  fill(inside);
+  square(-20, 20, 100, 200);
+  fill(middle);
+  square(-20, 120, 100, 200);
+  fill(inside);
+  square(180, 220, 100, 200);
+  fill(inside);
+  square(280, -80, 100, 200);
+  fill(middle);
+  square(280, 20, 100, 200);
+  fill(inside);
+  square(280, 120, 100, 200);
+  fill(middle);
+  square(280, 220, 100, 200);
+  fill(inside);
+  square(380, 220, 100, 200);
+  fill(middle);
+  square(380, 120, 100, 200);
+  fill(inside);
+  square(380, 20, 100, 200);
+  fill(middle);
+  square(380, -80, 100, 200);
+  fill(middle);
+  square(480, 20, 100, 200);
+  fill(inside);
+  square(480, -80, 100, 200);
+  fill(inside);
+  square(480, 120, 100, 200);
+  pop();
+
+  push();
+  translate(20, 80);//la primera coordenada mueve el conjunto a la derecha y la segunda coordenada mueve el conjunto a la izquierda 
+   fill(inside);
+  square(-20, 220, 100, 200);
+  fill(middle);
+  square(80, 220, 100, 200);
+  fill(middle);
+  square(80, 20, 100, 200);
+  fill(inside);
+  square(80, -80, 100, 200);
+  fill(inside);
+  square(80, 120, 100, 200);
+  fill(middle);
+  square(180, 120, 100,200);
+  fill(inside);
+  square(180, 20, 100, 200);
+  fill(middle);
+  square(180, -80, 100, 200);
+  fill(middle);
+  square(480, 220, 100, 200);
+  fill(middle);
+  square(580, -80, 100, 200);
+  fill(inside);
+  square(580, 20, 100, 200); 
+  fill(middle);
+  square(580, 120, 100, 200);
+  fill(inside);
+  square(580, 220, 100, 200);
+  fill(middle);
+  square(-20, 320, 100, 200);
+  fill(inside);
+  square(80, 320, 100, 200);
+  fill(middle);
+  square(180, 320, 100, 200);
+  fill(inside);
+  square(280, 320, 100, 200);
+  fill(middle);
+  square(380, 320, 100, 200);
+  fill(inside);
+  square(480, 320, 100, 200);
+  fill(middle);
+  square(580, 320, 100, 200);
+  pop();
+}
+        
+        function windowResized(){
+            createCanvas(700, 500);
+            background(51, 0, 0);
+        }
+    </script>
+</body>
+</html>
